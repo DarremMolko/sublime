@@ -242,6 +242,7 @@ config_file = 'config.ini'
 @click.option('--opensubtitles', type=click.STRING, nargs=2, metavar='USERNAME PASSWORD',
               help='OpenSubtitles configuration.')
 @click.option('--omdb', type=click.STRING, nargs=1, metavar='APIKEY', help='OMDB API key.')
+@click.option('--subdivx', type=click.STRING, nargs=2, metavar='USERNAME PASSWORD', help='subdivx configuration.')
 @click.option('--cache-dir', type=click.Path(writable=True, file_okay=False), default=dirs.user_cache_dir,
               show_default=True, expose_value=True, help='Path to the cache directory.')
 @click.option('--debug', is_flag=True, help='Print useful information for debugging subliminal and for reporting bugs.')
