@@ -281,7 +281,8 @@ def subliminal(ctx, addic7ed, legendastv, opensubtitles, omdb, cache_dir, debug)
     if opensubtitles:
         ctx.obj['provider_configs']['opensubtitles'] = {'username': opensubtitles[0], 'password': opensubtitles[1]}
         ctx.obj['provider_configs']['opensubtitlesvip'] = {'username': opensubtitles[0], 'password': opensubtitles[1]}
-
+    if subdivx:
+        ctx.obj['provider_configs']['subdivx'] = {'username': subdivx[0], 'password': subdivx[1]}
     # refiner configs
     if omdb:
         ctx.obj['refiner_configs']['omdb'] = {'apikey': omdb}
